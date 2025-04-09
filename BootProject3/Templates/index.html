@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Global Development Indicators</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="/static/js/main.js"></script> 
+    <style>
+      body { font-family: Arial; margin: 20px; }
+      select, input[type="range"] { padding: 8px; margin: 10px; }
+      canvas { max-width: 800px; }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Global Development Indicators Dashboard</h1>
+  
+    <label for="countrySelect">Select Country:</label>
+    <select id="countrySelect"></select>
+  
+    <div>
+      <label for="startYear">From:</label>
+      <select id="startYear"></select>
+  
+      <label for="endYear">To:</label>
+      <select id="endYear"></select>
+    </div>
+  
+    <button id="downloadBtn">Download Chart</button>
+  
+    <canvas id="chartCanvas"></canvas>
+  </body>
+  
+</html>
