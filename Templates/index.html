@@ -1,0 +1,99 @@
+<!-- Updated index.html with summary panel and support for GDP per capita -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Development Indicators</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="/static/js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      body {
+        font-family: Arial;
+        margin: 20px;
+      }
+
+      select, button {
+        padding: 8px;
+        margin: 10px 0;
+      }
+
+      canvas {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .summary-panel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 20px 0;
+      }
+
+      .summary-box {
+        background: #f2f2f2;
+        padding: 10px 15px;
+        border-radius: 8px;
+        flex: 1 1 200px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+
+      #map {
+        height: 400px;
+        margin-top: 20px;
+      }
+
+      .chart-section {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      @media (min-width: 768px) {
+        .chart-section {
+          flex-direction: row;
+        }
+
+        .chart-container {
+          width: 48%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Global Development Indicators Dashboard</h1>
+
+    <label for="countrySelect">Select Country:</label>
+    <select id="countrySelect"></select>
+
+    <label for="startYear">Year:</label>
+    <select id="startYear"></select>
+
+    <button id="downloadBtn">Download Chart</button>
+
+    <div class="summary-panel">
+      <div class="summary-box" id="summaryGDP">GDP: --</div>
+      <div class="summary-box" id="summaryPopulation">Population: --</div>
+      <div class="summary-box" id="summaryLifeExpectancy">Life Expectancy: --</div>
+      <div class="summary-box" id="summaryHealth">Health Expenditure: --</div>
+      <div class="summary-box" id="summaryGDPPerCapita">GDP per Capita: --</div>
+    </div>
+
+    <div class="chart-section">
+      <div class="chart-container">
+        <h3>GDP & Population</h3>
+        <canvas id="chartLarge"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Life Expectancy & Health Expenditure</h3>
+        <canvas id="chartSmall"></canvas>
+      </div>
+    </div>
+
+    <h2>Country Location</h2>
+    <div id="map"></div>
+  </body>
+</html>
+

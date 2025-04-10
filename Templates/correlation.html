@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Correlation View</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label, select { margin-right: 10px; }
+    canvas { max-width: 100%; }
+    #map { height: 400px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <h2>Correlation View</h2>
+
+  <label for="indicatorX">X-Axis:</label>
+  <select id="indicatorX">
+    <option value="GDP">GDP</option>
+    <option value="Population">Population</option>
+    <option value="LifeExpectancy">Life Expectancy</option>
+    <option value="HealthExpenditure">Health Expenditure</option>
+  </select>
+
+  <label for="indicatorY">Y-Axis:</label>
+  <select id="indicatorY">
+    <option value="LifeExpectancy">Life Expectancy</option>
+    <option value="HealthExpenditure">Health Expenditure</option>
+    <option value="GDP">GDP</option>
+    <option value="Population">Population</option>
+  </select>
+
+  <label for="yearSelect">Year:</label>
+  <select id="yearSelect"></select>
+
+  <div style="margin-top: 20px;">
+    <canvas id="correlationChart" width="1000" height="500"></canvas>
+  </div>
+
+  <h3>Select a Country to View on Map</h3>
+  <select id="countryMapSelect"></select>
+  <div id="map"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="/static/js/correlation.js"></script>
+</body>
+</html>
+
