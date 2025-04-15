@@ -12,7 +12,7 @@ const units = {
     GDP: "USD",
     Population: "people",
     LifeExpectancy: "yrs",
-    HealthExpenditure: "USD"
+    HealthExpenditure: "%"
 };
 
 let chartLarge, chartSmall;
