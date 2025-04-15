@@ -76,7 +76,7 @@ function updateSummary(data) {
     document.getElementById("summaryGDP").textContent = `GDP: ${GDP.toLocaleString()} USD`;
     document.getElementById("summaryPopulation").textContent = `Population: ${Population.toLocaleString()}`;
     document.getElementById("summaryLifeExpectancy").textContent = `Life Expectancy: ${LifeExpectancy.toFixed(2)} yrs`;
-    document.getElementById("summaryHealth").textContent = `Health Expenditure: ${HealthExpenditure.toFixed(2)} USD`;
+    document.getElementById("summaryHealth").textContent = `Health Expenditure (% of GDP): ${HealthExpenditure.toFixed(2)}%`;
     document.getElementById("summaryGDPPerCapita").textContent = `GDP per Capita: ${gdpPerCapita.toFixed(2)} USD`;
 }
 
