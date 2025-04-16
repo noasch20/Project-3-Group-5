@@ -40,7 +40,7 @@ The data is stored in a local SQLite database, which consists of two tables:
 
 ## Code References
 This project makes use of the following open-source libraries and frameworks:
-- **Flask**: https://flask.palletsprojects.com](https://flask.palletsprojects.com/en/stable/
+- **Flask**: https://flask.palletsprojects.com/en/stable/
 - **Leaflet.js**: https://leafletjs.com
 - **SQLite**: https://www.sqlite.org
 
