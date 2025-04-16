@@ -8,6 +8,13 @@ This project is a web-based visualization tool built with Flask that allows user
 - Leaflet World Map: Drops a marker on the selected country, showing location.
 - Correlation View: Navigate to the /correlation endpoint to see scatter plots of the indicators, along with an overlayed regression line and the corresponding r-squared value.
 
+### Homepage
+![homepage](https://github.com/user-attachments/assets/f07b9d61-8bb6-4734-8cdd-c70a4e5eea69)
+
+### Correlation View
+![correlation](https://github.com/user-attachments/assets/68b51c94-e9a4-410d-82e0-3a1d9aa274a6)
+
+
 ## How to Use
 1. Clone this repository
 2. Install dependencies using the requirements.txt file
