@@ -33,6 +33,7 @@ runs entirely locally, ensuring that user privacy remains unaffected.
 
 ## Data Sources
 - **World Bank Open Data**: https://data.worldbank.org
+
 The data is stored in a local SQLite database, which consists of two tables:
 - `countries`: Contains country names, codes, latitude, and longitude.
 - `indicators`: Contains yearly GDP, population, life expectancy, and healthcare expenditure for each country.
